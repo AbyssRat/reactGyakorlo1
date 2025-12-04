@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>ennyi másodperc telt el mióta ultoljára frissítetted az oldalt: {count}</h1>
+        <h1>számolgat: {count}</h1>
         <button onClick={startTimer}>indulj!!</button>
         <button onClick={stopTimer}>állj!!!!!!</button>
       </div>

@@ -1,17 +1,3 @@
-// növelhető, csökkenthető
-// Készíts egy számlálót, ami minden másodpercben növekszik
-// Használj useEffect-et az időzítő beállításához és takarításához
-
-//Input figyelés:
-// Készíts egy input mezőt
-// useEffect-tel figyeld a változását és mentsd localStorage-ba
-// Old meg az alaphelyzetbe állítást (mountkor olvasd ki a localStorage-ból)
-
- //API fetch hívás:
-// Kérj le adatot egy nyilvános API-ból (pl. JSONPlaceholder)
-// useEffect-ben végezd a fetch hívást
-// Kezeld a loading, error és data állapotokat
-// Ügyelj a cleanup-re (pl. fetch megszakítása)
 import './App.css';
 import { useState, useEffect, use } from 'react';
 

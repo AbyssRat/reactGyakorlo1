@@ -1,9 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import './App.css'
-{/* // növelhető, csökkenthető
-// Készíts egy számlálót, ami minden másodpercben növekszik
-// Használj useEffect-et az időzítő beállításához és takarításához */}
+{/*itt egy komment*/}
 
 function App() {
 
@@ -17,11 +15,12 @@ function App() {
     return () => clearInterval(interval);
   }, []);
 
+  
 
   return (
     <>
       <div className="App">
-        <h1>Számláló: {count}</h1>
+        <h1>ennyi másodperc telt el mióta ultoljára frissítetted az oldalt: {count}</h1>
       </div>
 
     </>

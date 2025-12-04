@@ -5,22 +5,39 @@ import './App.css'
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount(prevCount => prevCount + 1);
-    }, 1000);
+  const startTimer = () => {
+    setInterval(() => {
+      setCount((prevCount) => prevCount + 1)
+    }, 1000)
+  }
 
-    return () => clearInterval(interval);
-  }, []);
+  const stopTimer = () => {
+    clearInterval(setCount(0))
+    document.querySelector('h1').innerText = 'Az időzítő leállt.'
+    
+    
+
+
+  }
+
+  const aktTimer = count
+
+
+
+   
 
 
   return (
     <>
       <div className="App">
         <h1>ennyi másodperc telt el mióta ultoljára frissítetted az oldalt: {count}</h1>
+        <button onClick={startTimer}>indulj!!</button>
+        <button onClick={stopTimer}>állj!!!!!!</button>
       </div>
+
+      
 
     </>
   )

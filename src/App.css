@@ -7,3 +7,48 @@
     font-family: Arial, sans-serif;
     background-color: #ffccff;
 }
+
+h1 {
+    color: #b963eb;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#kezeloPanel {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #b963eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#imputPanel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #b963eb;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#apifetchPanel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color:#b963eb;
+}
+
